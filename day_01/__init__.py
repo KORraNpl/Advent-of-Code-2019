@@ -13,6 +13,7 @@ def total_fuel(modules):
 def fuel_required_by_module_v2(module_mass=0):
     if (module_mass // 3 - 2) < 0:
         return 0
+    
     return (module_mass // 3 - 2) + fuel_required_by_module_v2(module_mass // 3 - 2)
 
 
